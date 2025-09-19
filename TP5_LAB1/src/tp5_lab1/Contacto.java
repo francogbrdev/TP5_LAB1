@@ -43,10 +43,10 @@ public class Contacto {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Contacto)) return false;
+        if (this == o) return true; //si estamos en el mismo lugar fisico (o sea, que somo el mismo objeto  [Clasula guardian] 
+        if (!(o instanceof Contacto)) return false; //si es verdad que nNO es un contacto enotnces FAlso
         Contacto c = (Contacto) o;
-        return dni == c.dni;
+        return this.dni == c.dni;
     }
 
     @Override
